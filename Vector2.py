@@ -67,11 +67,11 @@ class Vector2:
   
   @property
   def min(self):
-    return self.x if self.x < self.y else self.y
+    return min(self.__coords)
       
   @property
   def max(self):
-    return self.x if self.x > self.y else self.y
+    return max(self.__coords)
   
   def normalize(self):
     self.divide(self.magnitude)
