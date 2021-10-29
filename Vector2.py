@@ -5,7 +5,6 @@ class Vector2:
   
   def __init__(self, x, y):
     self.__coords = (x if x != None else 0, y if y != None else 0)
-    self.__iter = 0
     
   def __iter__(self):
     yield self.__coords[0]
