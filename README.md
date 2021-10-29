@@ -1,3 +1,5 @@
 # geometry.py
 
-> copy of my geometry lib in typescript cuz im bored
+> copy of my [geometry](https://github.com/cursorsdottsx/geometry) lib in typescript cuz im bored
+
+im a noob at python pls no flame :)
