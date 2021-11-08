@@ -12,7 +12,7 @@ class Vector3:
     yield self.__coords[2]
     
   def add(self, thing, y, z):
-    if isinstance(thing, Vector2):
+    if isinstance(thing, Vector3):
       self.x += thing.x
       self.y += thing.y
       self.z += thing.z
@@ -24,7 +24,7 @@ class Vector3:
     return self
   
   def subtract(self, thing, y, z):
-    if isinstance(thing, Vector2):
+    if isinstance(thing, Vector3):
       self.x -= thing.x
       self.y -= thing.y
       self.z -= thing.z
@@ -36,7 +36,7 @@ class Vector3:
     return self
   
   def multiply(self, thing, y, z):
-    if isinstance(thing, Vector2):
+    if isinstance(thing, Vector3):
       self.x *= thing.x
       self.y *= thing.y
       self.z *= thing.z
@@ -48,7 +48,7 @@ class Vector3:
     return self
   
   def divide(self, thing, y, z):
-    if isinstance(thing, Vector2):
+    if isinstance(thing, Vector3):
       self.x /= thing.x
       self.y /= thing.y
       self.z /= thing.z
@@ -91,7 +91,7 @@ class Vector3:
     return v.x == self.x and v.y == self.y and v.z == self.z
 
   def to_string(self):
-    return f"Vector2 ({self.x}, {self.y}, {self.y})"
+    return f"Vector3 ({self.x}, {self.y}, {self.y})"
       
   def __print__(self):
     return self.to_string()
