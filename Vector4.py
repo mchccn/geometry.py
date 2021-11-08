@@ -100,7 +100,7 @@ class Vector4:
     return v.x == self.x and v.y == self.y and v.z == self.z and v.w == self.w
 
   def to_string(self):
-    return f"Vector2 ({self.x}, {self.y}, {self.y}, {self.z})"
+    return f"Vector4 ({self.x}, {self.y}, {self.z}, {self.w})"
       
   def __print__(self):
     return self.to_string()
