@@ -91,7 +91,7 @@ class Vector3:
     return v.x == self.x and v.y == self.y and v.z == self.z
 
   def to_string(self):
-    return f"Vector3 ({self.x}, {self.y}, {self.y})"
+    return f"Vector3 ({self.x}, {self.y}, {self.z})"
       
   def __print__(self):
     return self.to_string()
